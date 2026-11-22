@@ -242,6 +242,9 @@ footer small{display:block;opacity:.82;line-height:1.6}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.hero h1 span i{transform:none}.hero p.lead,.hero .ctas,.leader{opacity:1}.slides img:first-child{opacity:1}.roll{animation:none;flex-wrap:wrap;width:auto}}
 </style>
 <noscript><style>.rv{opacity:1;transform:none}.slides img:first-child{opacity:1}</style></noscript>
+<!-- Meta Pixel -->
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','5594284777462260');fbq('track','PageView');
+(function(){var T=0;function ev(n){var d=Date.now();if(d-T<1500)return;T=d;fbq('track',n)}var o=window.open;window.open=function(u){try{if(/wa\.me|whatsapp/i.test(String(u)))ev('Lead')}catch(e){}return o.apply(window,arguments)};document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(/wa\.me|whatsapp\.com/.test(h))ev(a.id==='go'||a.id==='mbgo'?'Lead':'Contact');else if(h.indexOf('tel:')===0)ev('Contact')},true)})();</script>
 </head>
 <body>
 
